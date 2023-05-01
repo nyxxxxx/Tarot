@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <style>
+        
+        body{
+            height: 3000px;
+        }
+        .container-fluid{
+            width: 75%;
+            margin: 0 auto;
+        }
+        .banner-div{
+            height: 700px;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 80px;
+            background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(122,192,217,1) 50%, rgba(122,192,217,1) 100%) , url("./img/tarot_banner.jpg");
+            background-position: bottom ;
+            background-size: cover;
+        }
+        .text-guide{
+            width: 85%;
+            margin: 0 auto;
+        }
+        .img-container{
+            width: 80%;
+            height: 450px;
+            margin: 0 auto;
+        }
+        .img-box{
+            flex: 1 0 200px; /* 设置每个 box 的最小宽度为 200px，最大宽度为容器宽度 */
+            margin: 0 10px;
+            background-image: linear-gradient(0deg, rgba(15,1,17,0.85) 0%, rgba(146,16,164,0.6) 100%), url("./img/tarot1.jpg") ;
+            background-size: cover;
+            padding: 20px;
+        }
+        .box-container {
+            width: 85%;
+            margin: 0 auto;
+        }
+        .box1 {
+            height: 250px;
+            width: 70%;
+            background-color: yellowgreen;
+            
+            margin-bottom: 30px;
+        }
+        .box2 {
+            height: 250px;
+            width: 70%;
+            background-color: yellowgreen;
+            
+            margin-bottom: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid row">
+                <!-- navbar-icon-col -->
+                <div class="col-3 ">
+                    <a class="navbar-brand " href="index.html">Landole<img src="./img/tarot.png" alt="tarot-icon">Tarot</a>
+                </div>
+
+                <!-- navbar-toggler-setting -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>       
+
+                <!-- navbar-content-col -->
+                <div class="col-9">
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </li>
+        
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    </div>                
+                </div>
+                
+
+            </div>
+        </nav>        
+    </header>
+    <!-- main -->
+    <main>
+        <!-- banner -->
+        <div class="row">
+            <div class="banner-div object-fit-cover">
+            </div>
+
+        </div>
+        <!-- text-guide -->
+        <div class="row align-items-center">
+            <div class="text-guide">
+                <div class="text-center">
+                    <h2>開啟你的塔羅牌之旅</h2>
+                    <p>塔羅牌裡面的各個元素、符號、以及象徵意義是源自公元前3世紀~14世紀中發展形成的，集合了多國神秘學、基督教、猶太教、埃及神話、星座、數字符號、象徵學等自成一格的嚴謹占卜體系；在各國廣為流傳，到了21世紀，全世界都可以找到塔羅牌的蹤影。塔羅牌雖有很廣泛的占卜和預測事物的用途，但在10~17世紀天主教占多數的歐洲，由於宗教保守氣氛和基督教系統禁止占卜，以至於塔羅牌逐漸放棄原本的占卜形式——在很長一段時間內擔任了紙牌遊戲的功能，直到最後蛻變為現在所常見的撲克牌。</p>
+                </div>                
+            </div>
+
+        </div>
+        <!-- img-box -->
+        <div class="row justify-content-around img-container">
+            <div class=" img-box"></div>
+            <div class=" img-box"></div>
+            <div class=" img-box"></div>
+        </div>
+
+        <h2 class="text-center">你可以參考以下目標</h2>
+        <!-- Slogan-section -->
+        <div class="row box-container ">
+            <div class="col  " style="border-right: 2px gray solid;">
+                <div class="box1 mx-auto"></div>
+                <div class="box1 mx-auto"></div>
+                <div class="box1 mx-auto"></div>
+            </div>
+
+            <div class="col " style="border-left: 2px gray solid;">
+                <div class="box2 mx-auto"></div>
+                <div class="box2 mx-auto"></div>
+                <div class="box2 mx-auto"></div>
+            </div>
+            
+        </div>
+    </main>
+
+
+</body>
+</html>                
+                
