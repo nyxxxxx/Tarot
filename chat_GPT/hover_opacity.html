@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity動畫</title>
+
+    <style>
+    .my-div {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+    }
+
+    .my-div:hover {
+    background-color: purple;
+    }
+
+    .hidden-text {
+    opacity: 0;
+    font-size: 16px;
+    transition: opacity 0.3s ease ,transform 0.5s ease;
+    }
+
+    .my-div:hover .hidden-text {
+    opacity: 1;
+    transform: scale(2);
+    }
+    </style>
+</head>
+<body>
+    <div class="my-div">
+        <span class="hidden-text">Hello World</span>
+      </div>
+</body>
+</html>
