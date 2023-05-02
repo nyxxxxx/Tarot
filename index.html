@@ -48,16 +48,21 @@
         .box1 {
             height: 250px;
             width: 70%;
-            background-color: yellowgreen;
-            
+            background-color: yellowgreen;   
             margin-bottom: 30px;
         }
-        .box2 {
-            height: 250px;
-            width: 70%;
-            background-color: yellowgreen;
-            
-            margin-bottom: 30px;
+        .hover-content {
+            width: 100%;
+            height: 100%;
+            display: none;
+            transition:  transform 0.2s ease;
+        }
+        .box1:hover {
+            background-color: violet;
+        }
+        .box1:hover .hover-content{
+            display: block;
+            transform: scale(1.3);
         }
     </style>
 
@@ -143,19 +148,46 @@
         <!-- Slogan-section -->
         <div class="row box-container ">
             <div class="col  " style="border-right: 2px gray solid;">
-                <div class="box1 mx-auto"></div>
-                <div class="box1 mx-auto"></div>
-                <div class="box1 mx-auto"></div>
+                <div class="box1 mx-auto ">
+                    <div class="d-flex hover-content  justify-content-center align-items-center">
+                        <p>hover後字串浮現</p>
+                    </div>
+                </div>
+
+                <div class="box1 mx-auto">
+                    <div class="d-flex hover-content  justify-content-center align-items-center">
+                        <p>hover後字串浮現</p>
+                    </div>
+                </div>
+
+                <div class="box1 mx-auto">
+                    <div class="d-flex hover-content  justify-content-center align-items-center">
+                        <p>hover後字串浮現</p>
+                    </div>
+                </div>
             </div>
 
             <div class="col " style="border-left: 2px gray solid;">
-                <div class="box2 mx-auto"></div>
-                <div class="box2 mx-auto"></div>
-                <div class="box2 mx-auto"></div>
+                <div class="box1 mx-auto">
+                    <div class="d-flex hover-content  justify-content-center align-items-center">
+                        <p class="">hover後字串浮現</p>
+                    </div>
+                </div>
+
+                <div class="box1 mx-auto">
+                    <div class="d-flex hover-content  justify-content-center align-items-center">
+                        <p>hover後字串浮現</p>
+                    </div>
+                </div>
+
+                <div class="box1 mx-auto">
+                    <div class="d-flex hover-content  justify-content-center align-items-center">
+                        <p>hover後字串浮現</p>
+                    </div>
+                </div>
             </div>
             
         </div>
-        <p>hello world</p>
     </main>
 
 

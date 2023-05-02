@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hover Effect</title>
+	<style>
+		.my-div {
+		width: 200px;
+		height: 200px;
+		background-color: #ccc;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: background-color 0.5s ease;
+		}
+
+		.my-div:hover {
+		background-color: purple;
+		}
+
+		.hidden-text {
+		display: none;
+		font-size: 16px;
+		transition: transform 0.5s ease;
+		}
+
+		.my-div:hover .hidden-text {
+		display: block;
+		transform: scale(1.3);
+		}
+	</style>
+</head>
+<body>
+	<div class="my-div">
+		<p class="hidden-text">Hello World</p>
+	  </div>
+</body>
+</html>
