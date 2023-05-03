@@ -65,7 +65,16 @@
             opacity: 1;
             transform: scale(2);
         }
-
+        /* Carousel-section */
+        .carousel-container {
+			
+			width: 800px;
+		}
+		.carousel-control {
+			position: absolute; /* 使控制按鈕絕對定位 */
+			top: 50%; /* 從頂部的 50% 開始 */
+			transform: translateY(-50%); /* 使用 translateY 函式調整位置，以使按鈕垂直置中 */
+		}
     </style>
 
 </head>
@@ -176,9 +185,40 @@
 
                 <a class="d-flex justify-content-center" href="#">View All</a>
             </div>
+        </div>
+        <!-- Carousel-section -->
+        <h1>Carousel Topic</h1>
 
-
-            
+        <div class="carousel-container d-flex align-items-center mx-auto"> <!--自己加的container-->
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel"><!--data-bs-ride="carousel" 會自動撥放 直到hover在物件上面-->
+                <!-- indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <!-- inner -->
+                <div class="carousel-inner" >
+                    <div class="carousel-item active" data-bs-interval="3000"><!--data-bs-interval="3000"設定切換的延遲時間-->
+                        <img class="slideimg1 d-block w-100" src="https://picsum.photos/id/265/800/400" alt="Third slide">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="slideimg1 d-block w-100" src="https://picsum.photos/id/237/800/400" alt="Third slide">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="slideimg1 d-block w-100" src="https://picsum.photos/id/355/800/400" alt="Third slide">
+                    </div>
+                </div>
+                <!-- prev&next button -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>		
+            </div>		
         </div>
     </main>
 
